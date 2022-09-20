@@ -65,7 +65,10 @@
          #itemA * {
             margin: 0 auto;
         }
-        
+
+        .emailInput {height: 30px; width: 315px;}
+        .passInput {height: 30px; width: 315px;}
+        .signIn {width: 315px; height: 30px;}
     </style>
 </head>
 <body>
@@ -74,14 +77,14 @@
                 <h1>Welcome Back!</h1><br>
                 <h4>Welcome back! Please enter your details.</h4><br>
                 <form>
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="Enter your email">
-                    <label for="password">Password</label>
-                    <input type="password">
+                    <label for="email">Email</label><br>
+                    <input type="email" class="emailInput" placeholder="Enter your email"><br><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" class="passInput"><br><br>
                     <input type="checkbox">
                     <label for="remember">Remember for 30 days</label>
-                    <a>Forgot Password</a>
-                    <button>Sign in</button>
+                    <a><b>Forgot Password</b></a><br><br>
+                    <button class="signIn">Sign in</button><br><br>
                     <label for account>Don't have an account? <a><b>Sign up for free</b></a></label>
                 </form>
         </div>
