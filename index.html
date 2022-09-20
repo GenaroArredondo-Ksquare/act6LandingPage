@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 1200px;
+            height: 700px;
+            display: flex;
+            /*background-color:blue;*/
+            /*flex-direction: row;*/
+        }
+
+        .item {
+            border: 1px solid #000;
+            width: 600px;
+            min-height: 700px;
+            margin: auto;
+        }
+        #itemA {
+            max-width: 700px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+
+        .img {
+            background-image: url(stock2.jpg);
+            background-size: cover;
+            width: 600px;
+            height: 700px;
+        }
+
+        .glassDiv {
+            font-size: 24px;
+            border: 1px solid #000;
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            top: 450px;
+            left: 700px;
+            background: rgba( 255, 255, 255, 0.25 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 5px );
+            -webkit-backdrop-filter: blur( 5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+
+        .glassTitle {
+            padding: 4px;
+        }
+
+         #itemA * {
+            margin: 0 auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="itemA" class="item A">
+                <h1>Welcome Back!</h1><br>
+                <h4>Welcome back! Please enter your details.</h4><br>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email">
+                    <label for="password">Password</label>
+                    <input type="password">
+                    <input type="checkbox">
+                    <label for="remember">Remember for 30 days</label>
+                    <a>Forgot Password</a>
+                    <button>Sign in</button>
+                    <label for account>Don't have an account? <a><b>Sign up for free</b></a></label>
+                </form>
+        </div>
+        <div class="item B">
+            <div class="img">
+                <div class="glassDiv">
+                <div class="glassTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus amet ab ex vel tenetur officia voluptatum sit provident. Cum molestiae, odio temporibus nostrum numquam placeat corrupti hic porro? Illum, dolores?</h1></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
